@@ -25,7 +25,7 @@ function MethodCard({
   copy,
   tone,
 }: {
-  heading: string;
+  heading: React.ReactNode;
   copy: string;
   tone: string;
 }) {
@@ -211,17 +211,17 @@ export default function Home() {
         </p>
         <div className="mx-auto mt-12 flex w-full max-w-[1000px] flex-nowrap items-start justify-center gap-6 overflow-x-auto px-2 pb-2">
           <MethodCard
-            heading="TUNING INWARD"
+            heading={<>TUNING<br />INWARD</>}
             copy="Participants learn how to identify what they are good at, the value they can add and how to articulate it."
             tone="#F8B617"
           />
           <MethodCard
-            heading="CONNECTING OUTWARD"
-            copy="Employees learn how to pitch themselves, how to influence and get buy in on ideas and grow their network. This benefits internal comms as well as external connections."
+            heading={<>CONNECTING<br />OUTWARD</>}
+            copy="Pitch yourself, learn how to influence and grow your network. Improve internal comms as well as external connections."
             tone="#F05336"
           />
           <MethodCard
-            heading="TAKING ACTION"
+            heading={<>TAKING<br />ACTION</>}
             copy="No one leaves without making a contact. We orient everything around taking as much action as possible in the session."
             tone="#F7ABA8"
           />
