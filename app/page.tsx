@@ -237,12 +237,12 @@ export default function Home() {
         <img
   src="/testimonial-1.png"
   alt="Testimonial email"
-  className="w-[300px] rounded-[11px] border-[5px] border-[#191D2A]"
+  className="max-w-[340px] rounded-[11px]"
 />
 <img
   src="/testimonial-2.png"
   alt="Testimonial email"
-  className="w-[300px] rounded-[11px] border-[5px] border-[#191D2A]"/>
+  className="max-w-[340px] rounded-[11px]"/>
         </div>
       </section>
 
