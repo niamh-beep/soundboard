@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Jubel";
+  src: url("/fonts/Jubel-Regular.woff2") format("woff2"),
+    url("/fonts/Jubel-Regular.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GT Maru Regular";
+  src: url("/fonts/GT-Maru-Regular.woff2") format("woff2"),
+    url("/fonts/GT-Maru-Regular.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #191d2a;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: "GT Maru Regular", system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #191d2a;
+    --foreground: #f7f5f5;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: "GT Maru Regular", system-ui, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Jubel", system-ui, sans-serif;
+}
