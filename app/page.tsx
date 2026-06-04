@@ -30,20 +30,26 @@ function MethodCard({
   tone: string;
 }) {
   return (
-    <article
-      className="relative flex min-h-[400px] w-[300px] flex-col rounded-[11px] border-[5px] border-[#191D2A] px-5 pb-6 pt-14 shadow-[0_3px_0_#191D2A]"
-      style={{ backgroundColor: tone }}
-    >
+    <div className="relative w-[300px] pt-[35px]">
       <img
         src="/soundboard-tune-in-connect-out-white-1080px.png"
         alt=""
-        className="absolute right-4 top-0 w-[60px] -translate-y-1/2"
+        className="absolute left-1/2 top-0 z-10 w-[70px] -translate-x-1/2"
       />
-      <h4 className="font-[&quot;Jubel&quot;,system-ui,sans-serif] text-[24px] leading-[0.95] tracking-[-0.03em] text-[#191D2A]">
-        {heading}
-      </h4>
-      <p className="mt-3 flex-1 text-[16px] leading-[1.5] text-[#191D2A]">{copy}</p>
-    </article>
+      <div
+        className="rounded-[11px] p-[6px]"
+        style={{ backgroundColor: tone }}
+      >
+        <article className="flex min-h-[350px] flex-col rounded-[7px] border-[5px] border-[#191D2A] px-5 pb-6 pt-10">
+          <h4 className="font-[&quot;Jubel&quot;,system-ui,sans-serif] text-[24px] leading-[0.95] tracking-[-0.03em] text-[#191D2A]">
+            {heading}
+          </h4>
+          <p className="mt-3 flex-1 text-[16px] leading-[1.5] text-[#191D2A]">
+            {copy}
+          </p>
+        </article>
+      </div>
+    </div>
   );
 }
 
@@ -74,9 +80,7 @@ export default function Home() {
       </header>
 
       <section className="mx-auto flex max-w-[900px] flex-col items-center px-4 pb-14 pt-4 text-center">
-        <h1
-          className="font-[&quot;Jubel&quot;,system-ui,sans-serif] text-[58px] leading-[0.88] tracking-[-0.03em] text-[#191D2A] md:text-[92px]"
-        >
+        <h1 className="font-[&quot;Jubel&quot;,system-ui,sans-serif] text-[58px] leading-[0.88] tracking-[-0.03em] text-[#191D2A] md:text-[92px]">
           <span className="block">TUNE IN</span>
           <span className="block">CONNECT OUT</span>
           <span className="block">MOVE FORWARD</span>
@@ -141,14 +145,12 @@ export default function Home() {
       </section>
 
       <section className="bg-[#F7ABA8] px-6 py-8 text-center">
-        <h2
-          className="font-[&quot;Jubel&quot;,system-ui,sans-serif] mx-auto max-w-[760px] text-[32px] leading-[0.95] tracking-[-0.03em] text-[#191D2A] md:text-[44px]"
-        >
+        <h2 className="font-[&quot;Jubel&quot;,system-ui,sans-serif] mx-auto max-w-[760px] text-[32px] leading-[0.95] tracking-[-0.03em] text-[#191D2A] md:text-[44px]">
           YOUR NEXT OPPORTUNITY ISN&apos;T
           <br />
           WAITING IN A TO-DO LIST.
         </h2>
-        <p className="mt-1 text-[14px] italic text-[#191D2A]">
+        <p className="mt-2 font-['Caveat',cursive] text-[22px] text-[#191D2A]">
           It&apos;s in a relationship you haven&apos;t built yet.
         </p>
       </section>
@@ -192,16 +194,14 @@ export default function Home() {
       </section>
 
       <section className="bg-[#F7F5F5] px-6 py-12 text-center">
-        <h2
-          className="font-[&quot;Jubel&quot;,system-ui,sans-serif] text-[36px] leading-none tracking-[-0.03em] text-[#191D2A] md:text-[48px]"
-        >
+        <h2 className="font-[&quot;Jubel&quot;,system-ui,sans-serif] text-[36px] leading-none tracking-[-0.03em] text-[#191D2A] md:text-[48px]">
           THE{" "}
           <Image
             src="/soundboard-wordmark-black.png"
             alt="Soundboard"
-            width={120}
-            height={36}
-            className="mx-1 inline-block h-[28px] w-auto align-middle md:h-[34px]"
+            width={200}
+            height={60}
+            className="mx-1 inline-block h-[40px] w-auto align-middle md:h-[52px]"
           />{" "}
           METHOD
         </h2>
@@ -209,7 +209,7 @@ export default function Home() {
           Find yourself a mentor and connect more meaningfully with people in
           your network.
         </p>
-        <div className="mx-auto mt-12 flex w-full max-w-[1000px] flex-nowrap items-stretch justify-center gap-6 overflow-x-auto px-2 pb-2">
+        <div className="mx-auto mt-12 flex w-full max-w-[1000px] flex-nowrap items-start justify-center gap-6 overflow-x-auto px-2 pb-2">
           <MethodCard
             heading="TUNING INWARD"
             copy="Participants learn how to identify what they are good at, the value they can add and how to articulate it."
@@ -229,9 +229,7 @@ export default function Home() {
       </section>
 
       <section className="bg-[#2BB673] px-5 py-9 text-center">
-        <h2
-          className="font-[&quot;Jubel&quot;,system-ui,sans-serif] mx-auto max-w-[790px] text-[34px] leading-[0.95] tracking-[-0.03em] text-[#191D2A] md:text-[44px]"
-        >
+        <h2 className="font-[&quot;Jubel&quot;,system-ui,sans-serif] mx-auto max-w-[790px] text-[34px] leading-[0.95] tracking-[-0.03em] text-[#191D2A] md:text-[44px]">
           WE GIVE YOU SHORTCUTS TO KILLER CONNECTIONS, SO YOU SEND US EMAILS
           LIKE THESE.
         </h2>
@@ -256,9 +254,7 @@ export default function Home() {
         }}
       >
         <div className="mx-auto w-full max-w-[420px] rounded-[11px] border-[5px] border-[#191D2A] bg-[#F7F5F5] p-6 shadow-[0_4px_0_#191D2A]">
-          <h3
-            className="font-[&quot;Jubel&quot;,system-ui,sans-serif] text-center text-[45px] leading-[0.9] tracking-[-0.03em] text-[#191D2A]"
-          >
+          <h3 className="font-[&quot;Jubel&quot;,system-ui,sans-serif] text-center text-[40px] leading-[0.9] tracking-[-0.03em] text-[#191D2A]">
             JOIN THE NEXT
             <br />
             WORKSHOP
