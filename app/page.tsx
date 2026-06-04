@@ -40,8 +40,8 @@ function MethodCard({
         className="rounded-[11px] p-[6px]"
         style={{ backgroundColor: tone }}
       >
-        <article className="flex min-h-[350px] flex-col rounded-[7px] border-[5px] border-[#191D2A] px-5 pb-6 pt-10">
-          <h4 className="font-[&quot;Jubel&quot;,system-ui,sans-serif] text-[24px] leading-[0.95] tracking-[-0.03em] text-[#191D2A]">
+        <article className="flex  flex-col rounded-[7px] border-[5px] border-[#191D2A] px-5 pb-6 pt-10">
+          <h4 className="font-[&quot;Jubel&quot;,system-ui,sans-serif] text-[32px] leading-[0.95] tracking-[-0.03em] text-[#191D2A]">
             {heading}
           </h4>
           <p className="mt-3 flex-1 text-[16px] leading-[1.5] text-[#191D2A]">
@@ -201,7 +201,7 @@ export default function Home() {
             alt="Soundboard"
             width={200}
             height={60}
-            className="mx-1 inline-block h-[40px] w-auto align-middle md:h-[52px]"
+            className="mx-1 inline-block h-[48px] w-auto align-middle md:h-[60px]"
           />{" "}
           METHOD
         </h2>
@@ -234,14 +234,15 @@ export default function Home() {
           LIKE THESE.
         </h2>
         <div className="mx-auto mt-6 flex w-full max-w-[760px] flex-wrap justify-center gap-6">
-          <div className="w-[300px] rounded-[11px] border-[5px] border-[#191D2A] bg-[#F7F5F5] p-5 text-left text-[15px] leading-[1.5] text-[#191D2A]">
-            &quot;I finally launched the thing I had been delaying for months.
-            Thank you for the push.&quot;
-          </div>
-          <div className="w-[300px] rounded-[11px] border-[5px] border-[#191D2A] bg-[#F7F5F5] p-5 text-left text-[15px] leading-[1.5] text-[#191D2A]">
-            &quot;This helped me simplify my offer and book my next two clients in
-            one week.&quot;
-          </div>
+        <img
+  src="/testimonial-1.png"
+  alt="Testimonial email"
+  className="w-[300px] rounded-[11px] border-[5px] border-[#191D2A]"
+/>
+<img
+  src="/testimonial-2.png"
+  alt="Testimonial email"
+  className="w-[300px] rounded-[11px] border-[5px] border-[#191D2A]"/>
         </div>
       </section>
 
